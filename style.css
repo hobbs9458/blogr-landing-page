@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  display: inline-block;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* HERO/NAV */
+.main-nav {
+  width: 100%;
+  height: 600px;
+  background: url("images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(to right bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-repeat: no-repeat;
+  background-position: 34% 36%;
+  border-bottom-left-radius: 150px;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1.5rem 4.5rem;
+}
+
+.cta-card {
+  min-width: 90%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1rem;
+  text-align: center;
+}
+
+.cta-card h1 {
+  font-size: 36px;
+  margin: 0 0 0.25rem;
+  line-height: 3.5rem;
+  min-width: 100%;
+}
+
+.cta-card p {
+  font-size: 18px;
+  margin: 0 0 1.5rem;
+}
+
+.cta-text {
+  margin-bottom: 1rem;
+}
+
+.cta-btns,
+.dropdown-card-btns-wrap button:last-of-type {
+  font-family: "Ubuntu", sans-serif;
+  width: 137px;
+  height: 48px;
+  border-radius: 28px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0.75rem;
+}
+
+.start-btn {
+  color: #ff505c;
+  background: white;
+}
+
+.learn-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.cta-btns:hover {
+  cursor: pointer;
+}
+
+/* HAMBURGER DROPDOWN  */
+.dropdown-card {
+  background: white;
+  color: #1f3e5a;
+  font-size: 18px;
+  font-weight: 600;
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 0.5rem grey);
+}
+
+.dropdown-card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.dropdown-card .dropdown {
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  width: 85%;
+  max-width: 750px;
+  background: rgb(151, 151, 151, 0.2);
+  border-radius: 5px;
+}
+
+.dropdown-card .dropdown li {
+  padding: 0.75rem 0;
+}
+
+.dropdown-card .dropdown:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.dropdown-card-btns-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  width: 85%;
+  max-width: 750px;
+  border-top: 1px solid #e8e4e4;
+  margin: 0 auto;
+}
+
+.dropdown-card-btns-wrap button:last-of-type {
+  background: linear-gradient(
+    to right bottom,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.dropdown-btn-wrap:hover {
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 137px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #1f3e5a;
+  font-weight: 600;
+}
+
+.dropdown-arrow-image-up {
+  transform: scaleY(-1);
+}
+
+.hidden {
+  display: none;
+}
+
+.closing-icon {
+  content: url(./images/icon-close.svg);
+}
+
+/* BELOW NAV */
+h2 {
+  font-size: 28px;
+  color: #1f3e5a;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 65%;
+}
+
+.main-img {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.illustration-editor-mobile {
+  max-width: 575px;
+  margin-bottom: 3rem;
+}
+
+.main-content-card {
+  margin: 0 auto;
+}
+
+.main-content-card {
+  text-align: center;
+  max-width: 80%;
+}
+
+.main-content-card p {
+  color: #4c5862;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+.main-content-card-light p,
+.main-content-card-light h2 {
+  color: white;
+}
+
+.main-content-card-light h2 {
+  font-size: 40px;
+  min-width: 327px;
+}
+
+.main-content-card-light {
+  max-width: 95%;
+}
+
+.iphones-img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -25%;
+}
+
+.bg-pattern-circles {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.bg-mid-page-section {
+  min-height: 600px;
+  text-align: center;
+  padding-top: 15rem;
+  /* margin-top: 15rem;
+  margin-bottom: 3rem; */
+  margin: 15rem 0 0;
+  position: relative;
+  height: 68.58vh;
+  background: url("./images/bg-pattern-circles.svg"),
+    linear-gradient(to right bottom, #2d2e40, #3f4164);
+  background-repeat: no-repeat;
+  background-size: 155%, 100%;
+  background-position: center -225px, center;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+/* BELOW MID PAGE BACKGROUND FEATURE */
+
+/* .img-laptop-mobile-wrap {
+  background: url("./images/illustration-laptop-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.img-wrap-laptop-mobile {
+  min-height: 481px;
+  background: url("./images/illustration-laptop-mobile.svg");
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 135%;
+  margin: -2rem auto -3rem;
+  max-width: 530px;
+}
+
+/* FOOTER */
+.footer {
+  min-height: 900px;
+  width: 100%;
+  background: #24242c;
+  color: white;
+  padding-top: 6rem;
+  margin-top: 5rem;
+  border-top-right-radius: 100px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.footer-logo .logo {
+  display: block;
+  max-width: 101px;
+  height: 40px;
+  margin: 0 auto 4rem;
+}
+
+.footer-card h2,
+.footer-card li {
+  font-size: 18px;
+}
+
+.footer-card h2:hover,
+.footer-card li:hover {
+  cursor: pointer;
+}
+
+.footer-card h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.footer-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-card li {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.25rem;
+  font-weight: 400;
+  color: rgb(163, 163, 163);
+}
+
+.footer-card li:last-of-type {
+  margin-bottom: 4rem;
+}
+
+.footer-card:last-of-type li:last-of-type {
+  margin-bottom: 0;
+}
+/* MEDIA QUERIES */
+
+@media (min-width: 422px) {
+  .img-wrap-laptop-mobile {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}

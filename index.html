@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogr</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="nav-wrap">
+        <div class="logo-wrap">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
+        </div>
+        <div class="hamburger-icon-wrap">
+          <img
+            class="hamburger-icon"
+            src="./images/icon-hamburger.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="cta-card">
+        <div class="cta-text">
+          <h1>A modern publishing platform</h1>
+          <p>Grow your audience and build your online brand</p>
+        </div>
+        <div class="cta-btns-wrap">
+          <button class="cta-btns start-btn">Start for Free</button>
+          <button class="cta-btns learn-btn">Learn more</button>
+        </div>
+      </div>
+      <div class="dropdown-card hidden">
+        <ul>
+          <li>
+            <div data-dropdown="product" class="dropdown-btn-wrap">
+              <p class="drowdown-btn-element">
+                Product
+                <img
+                  class="dropdown-arrow dropdown-arrow-image-up"
+                  src="./images/icon-arrow-dark.svg"
+                  alt="drowdown arrow image"
+                />
+              </p>
+            </div>
+            <ul class="dropdown product hidden">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </li>
+          <li>
+            <div data-dropdown="company" class="dropdown-btn-wrap">
+              <p class="drowdown-btn-element">
+                Company
+                <img
+                  class="dropdown-arrow dropdown-arrow-image-up"
+                  src="./images/icon-arrow-dark.svg"
+                  alt="drowdown arrow image"
+                />
+              </p>
+            </div>
+
+            <ul class="dropdown company hidden">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </li>
+          <li>
+            <div data-dropdown="connect" class="dropdown-btn-wrap">
+              <p class="drowdown-btn-element">
+                Connect
+                <img
+                  class="dropdown-arrow dropdown-arrow-image-up"
+                  src="./images/icon-arrow-dark.svg"
+                  alt="drowdown arrow image"
+                />
+              </p>
+            </div>
+            <ul class="dropdown connect hidden">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="dropdown-card-btns-wrap">
+          <button class="login-btn">Login</button>
+          <button>Sign Up</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <h2>Designed for the Future</h2>
+      <img
+        src="./images/illustration-editor-mobile.svg"
+        alt=""
+        class="illustration-editor-mobile main-img"
+      />
+      <div class="main-content-card">
+        <h2>Introducing an extensible editor</h2>
+        <p>
+          Blogr features an exceedingly intuitive interface which lets you focus
+          on one thing: creating content. The editor supports management of
+          multiple blogs and allows easy manipulation of embeds such as images,
+          videos, and Markdown. Extensibility with plugins and themes provide
+          easy ways to add functionality or change the looks of a blog.
+        </p>
+      </div>
+
+      <div class="main-content-card">
+        <h2>Robust content management</h2>
+        <p>
+          Flexible content management enables users to easily move through
+          posts. Increase the usability of your blog by adding customized
+          categories, sections, format, or flow. With this functionality, you’re
+          in full control.
+        </p>
+      </div>
+
+      <div class="bg-mid-page-section">
+        <img
+          class="iphones-img"
+          src="./images/illustration-phones.svg"
+          alt="2 iphones"
+        />
+        <div class="main-content-card main-content-card-light">
+          <h2>State of the Art Infrastructure</h2>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </div>
+      <div class="img-wrap-laptop-mobile"></div>
+      <div class="main-content-card">
+        <h2>Free, open, simple</h2>
+        <p>
+          Blogr is a free and open source application backed by a large
+          community of helpful developers. It supports features such as code
+          syntax highlighting, RSS feeds, social media integration, third-party
+          commenting tools, and works seamlessly with Google Analytics. The
+          architecture is clean and is relatively easy to learn.
+        </p>
+      </div>
+      <div class="main-content-card">
+        <h2>Powerful tooling</h2>
+        <p>
+          Batteries included. We built a simple and straightforward CLI tool
+          that makes customization and deployment a breeze, but capable of
+          producing even the most complicated sites.
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img class="logo" src="./images/logo.svg" alt="logo" />
+      </div>
+      <div class="footer-card">
+        <h2>Product</h2>
+        <ul>
+          <li>Overview</li>
+          <li>Pricing</li>
+          <li>Marketplace</li>
+          <li>Features</li>
+          <li>Integrations</li>
+        </ul>
+      </div>
+      <div class="footer-card">
+        <h2>Company</h2>
+        <ul>
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div class="footer-card">
+        <h2>Connect</h2>
+        <ul>
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- RETURNING NOTES 3/16/22
+  I THINK MOBILE IS MOSTLY FINISHED; NEED TO FIX ARROWS, 
+  WHEN CLOSING HAMBURGER MENU ARROWS DO NOT RESET PROPERLY;
+  NEXT THING IS TO WORK
+  ON DESKTOP VERSION;
+-->
