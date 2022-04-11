@@ -27,6 +27,57 @@
         <div class="logo-wrap">
           <img class="logo" src="./images/logo.svg" alt="logo" />
         </div>
+
+        <!-- DESKTOP NAV -->
+        <ul class="desktop-nav">
+          <div data-desktopdropdown="desktop-nav-dropdown-1" class="dropdownBtn">
+            <li class="dropdown-menu-wrap-desktop">Product <img
+              class="dropdown-arrow dropdown-arrow-desktop dropdown-arrow-image-up"
+              src="./images/icon-arrow-light.svg"
+              alt="drowdown arrow image"
+            /></li>
+          </div>
+          <ul class="desktop-nav-dropdown desktop-nav-dropdown-1 hidden">
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+          <div data-desktopdropdown="desktop-nav-dropdown-2" class="dropdownBtn">
+            <li class="dropdown-menu-wrap-desktop">Company <img
+              class="dropdown-arrow dropdown-arrow-desktop dropdown-arrow-image-up"
+              src="./images/icon-arrow-light.svg"
+              alt="drowdown arrow image"
+            /></li>
+          </div>
+          <ul class="desktop-nav-dropdown desktop-nav-dropdown-2 hidden">
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+          <div data-desktopdropdown="desktop-nav-dropdown-3" class="dropdownBtn">
+            <li class="dropdown-menu-wrap-desktop">Connect <img
+              class="dropdown-arrow dropdown-arrow-desktop dropdown-arrow-image-up"
+              src="./images/icon-arrow-light.svg"
+              alt="drowdown arrow image"
+            /></li>
+          </div>
+          <ul class="desktop-nav-dropdown desktop-nav-dropdown-3 hidden">
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </ul>
+
+        <!-- DESKTOP CTA BUTTONS -->
+        <div class="dropdown-card-btns-wrap nav-btns-wrap-desktop">
+          <button class="login-btn" id="nav-login-btn-desktop">Login</button>
+          <button id="nav-start-btn-desktop">Sign Up</button>
+        </div>
+
+        <!-- MOBILE NAV MENU -->
         <div class="hamburger-icon-wrap">
           <img
             class="hamburger-icon"
@@ -37,12 +88,12 @@
       </div>
       <div class="cta-card">
         <div class="cta-text">
-          <h1>A modern publishing platform</h1>
-          <p>Grow your audience and build your online brand</p>
+          <h1 class="cta-header">A modern publishing platform</h1>
+          <p class="cta-p">Grow your audience and build your online brand</p>
         </div>
         <div class="cta-btns-wrap">
-          <button class="cta-btns start-btn">Start for Free</button>
-          <button class="cta-btns learn-btn">Learn more</button>
+          <button id="btn-cta-start" class="cta-btns start-btn">Start for Free</button>
+          <button id="btn-cta-learn-more" class="cta-btns learn-btn">Learn more</button>
         </div>
       </div>
       <div class="dropdown-card hidden">
@@ -104,48 +155,60 @@
           </li>
         </ul>
         <div class="dropdown-card-btns-wrap">
-          <button class="login-btn">Login</button>
-          <button>Sign Up</button>
+          <button id="btn-cta-login">Login</button>
+          <button id="btn-cta-sign-up">Sign Up</button>
         </div>
       </div>
     </nav>
+    <!-- MAIN CONTENT -->
     <main>
-      <h2>Designed for the Future</h2>
-      <img
-        src="./images/illustration-editor-mobile.svg"
-        alt=""
-        class="illustration-editor-mobile main-img"
-      />
-      <div class="main-content-card">
-        <h2>Introducing an extensible editor</h2>
-        <p>
-          Blogr features an exceedingly intuitive interface which lets you focus
-          on one thing: creating content. The editor supports management of
-          multiple blogs and allows easy manipulation of embeds such as images,
-          videos, and Markdown. Extensibility with plugins and themes provide
-          easy ways to add functionality or change the looks of a blog.
-        </p>
-      </div>
+      <section class="main-section-1">  
+        <h2 class="heading-main-section-1 header-main-section">Designed for the Future</h2>
+        <img
+          src="./images/illustration-editor-mobile.svg"
+          alt=""
+          class="illustration-editor-mobile main-img"
+        />
 
-      <div class="main-content-card">
-        <h2>Robust content management</h2>
-        <p>
-          Flexible content management enables users to easily move through
-          posts. Increase the usability of your blog by adding customized
-          categories, sections, format, or flow. With this functionality, you’re
-          in full control.
-        </p>
-      </div>
-
-      <div class="bg-mid-page-section">
+        <img
+          src="./images/illustration-editor-desktop.svg"
+          alt=""
+          class="illustration-editor-desktop main-img hidden"
+        />
+        <div class="content-cards-wrap">
+          <div class="main-content-card main-content-card-1">
+            <h2 class="h2-main">Introducing an extensible editor</h2>
+            <p>
+              Blogr features an exceedingly intuitive interface which lets you focus
+              on one thing: creating content. The editor supports management of
+              multiple blogs and allows easy manipulation of embeds such as images,
+              videos, and Markdown. Extensibility with plugins and themes provide
+              easy ways to add functionality or change the looks of a blog.
+            </p>
+          </div>
+  
+          <div class="main-content-card main-content-card-2">
+            <h2 class="h2-main">Robust content management</h2>
+            <p>
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality, you’re
+              in full control.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- CONT'D: SECTION 2 -->
+      <div id="section-2" class="bg-mid-page-section">
         <img
           class="iphones-img"
           src="./images/illustration-phones.svg"
           alt="2 iphones"
         />
-        <div class="main-content-card main-content-card-light">
+        <div id="main-content-card-section-2" class="main-content-card main-content-card-light">
           <h2>State of the Art Infrastructure</h2>
-          <p>
+          <p class="main-content-card-section-2-p">
             With reliability and speed in mind, worldwide data centers provide
             the backbone for ultra-fast connectivity. This ensures your site
             will load instantly, no matter where your readers are, keeping your
@@ -154,30 +217,39 @@
         </div>
       </div>
       <div class="img-wrap-laptop-mobile"></div>
-      <div class="main-content-card">
-        <h2>Free, open, simple</h2>
-        <p>
-          Blogr is a free and open source application backed by a large
-          community of helpful developers. It supports features such as code
-          syntax highlighting, RSS feeds, social media integration, third-party
-          commenting tools, and works seamlessly with Google Analytics. The
-          architecture is clean and is relatively easy to learn.
-        </p>
+
+      <!-- MAIN SECTION 3 -->
+      <div class="section-3-wrap">
+        <div class="img-illustration-laptop-desktop"></div>
+        <div class="main-content-card-section-3-wrap">
+          <div class="main-content-card main-content-card-section-3-1">
+            <h2>Free, open, simple</h2>
+            <p>
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration, third-party
+              commenting tools, and works seamlessly with Google Analytics. The
+              architecture is clean and is relatively easy to learn.
+            </p>
+          </div>
+          <div class="main-content-card main-content-card-section-3-2">
+            <h2>Powerful tooling</h2>
+            <p>
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+        
       </div>
-      <div class="main-content-card">
-        <h2>Powerful tooling</h2>
-        <p>
-          Batteries included. We built a simple and straightforward CLI tool
-          that makes customization and deployment a breeze, but capable of
-          producing even the most complicated sites.
-        </p>
-      </div>
+      
     </main>
     <footer class="footer">
       <div class="footer-logo">
         <img class="logo" src="./images/logo.svg" alt="logo" />
       </div>
-      <div class="footer-card">
+      <div class="footer-card footer-card-1">
         <h2>Product</h2>
         <ul>
           <li>Overview</li>
@@ -187,7 +259,7 @@
           <li>Integrations</li>
         </ul>
       </div>
-      <div class="footer-card">
+      <div class="footer-card footer-card-2">
         <h2>Company</h2>
         <ul>
           <li>About</li>
@@ -196,7 +268,7 @@
           <li>Careers</li>
         </ul>
       </div>
-      <div class="footer-card">
+      <div class="footer-card footer-card-3">
         <h2>Connect</h2>
         <ul>
           <li>Contact</li>
@@ -209,9 +281,9 @@
   </body>
 </html>
 
-<!-- RETURNING NOTES 3/16/22
-  I THINK MOBILE IS MOSTLY FINISHED; NEED TO FIX ARROWS, 
-  WHEN CLOSING HAMBURGER MENU ARROWS DO NOT RESET PROPERLY;
-  NEXT THING IS TO WORK
-  ON DESKTOP VERSION;
+<!-- RETURNING NOTES 4/6/22
+  TO DO: 
+  // CHECK STYLES IN DIFFERENT PHONE VIEWPORTS
+  // ADD ARROW ANIMATION TO DESKTOP DROPDOWNS
+  // NEED TO FIGURE OUT HOW TO CLOSE NAV MENUS WHEN CLICKING AWAY FROM MENU  
 -->
